@@ -39,3 +39,36 @@ Flask / FastAPI: For optional web UI.
 tqdm: For progress bars (makes CLI tools nicer).
 
 Dataset Acquisition: This will be your biggest challenge for the AI part.
+
+## Installation
+
+# Create a virtual environment and install dependencies
+
+python -m venv venv
+
+# Activate on PowerShell
+
+venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Install the package in editable mode
+
+pip install -e .
+
+## Usage
+
+# Run the CLI scanner (text output)
+
+paat path/to/code
+
+# JSON output
+
+paat path/to/code -o json
+
+# Web API mode (Flask)
+
+# From project root:
+
+export FLASK_APP=paat.web.app
+flask run --port 5000

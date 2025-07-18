@@ -1,2 +1,5 @@
 scikit-learn
 flask
+pandas
+numpy
+joblib
